@@ -9,5 +9,5 @@ https://dog.ceo/dog-api/
 
 **Dependencies:**
 - Javascript
-- API (.fetch)
+- fetch() API 
 - JQuery

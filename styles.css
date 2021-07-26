@@ -28,6 +28,7 @@ select {
 
 
 .slideshow {
+    
     flex: 1;
     position: relative;
     overflow: hidden;
@@ -38,4 +39,5 @@ select {
 
 img {
     max-width: 40%;
+    display: inline-block;
 }
