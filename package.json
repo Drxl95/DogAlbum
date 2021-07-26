@@ -1,0 +1,23 @@
+{
+  "name": "dogcollage",
+  "version": "1.0.0",
+  "description": "Collage of Dog Pictures",
+  "main": "index.js",
+  "scripts": {
+    "jsdoc": "jsdoc -c jsdoc.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Drxl95/DogCollage.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Drxl95/DogCollage/issues"
+  },
+  "homepage": "https://github.com/Drxl95/DogCollage#readme",
+  "devDependencies": {
+    "jsdoc": "^3.6.7"
+  }
+}

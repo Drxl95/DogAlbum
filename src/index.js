@@ -39,8 +39,19 @@ function createImgs(images) {
     let imageContainer = $(".slideshow");
     let dogImgs = $('<img>');
     dogImgs.attr("src", images[Math.floor(Math.random() * images.length)]);
+    dogImgs.addClass("dogPic")
     imageContainer.append(dogImgs);
 }
+$(document).on('dblclick', ".dogPic", function () {
+    $(this).remove();
+})
+
+
+
+
+
+
+
 
 
 
