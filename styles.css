@@ -42,6 +42,24 @@ img {
     display: inline-block;
 }
 
+.top_link_position {
+    display: block;
+  position: fixed;
+    bottom: 4%;
+    right: 3%;
+    z-index: 600;
+  }
+  
+  
+  .top_btn {
+      border: 1.5px solid white;
+      background: black;
+      padding: .5rem .5rem;
+      color: white;
+      font-weight: bolder;
+      text-transform: uppercase;
+  }
+
 @media screen and (max-width: 425px) {
     .header {
         font-size: 1.25rem;
