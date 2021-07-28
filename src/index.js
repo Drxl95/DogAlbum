@@ -48,8 +48,16 @@ $(document).on('dblclick', ".dogPic", function () {
     $(this).remove();
 })
 
+//resets select menu when image has loaded
+$("#breeds").on("change", "select", function () {
+    const value = this.value;
+    console.log(value);
+    let select = this
 
-
+    setTimeout(function () {
+        select.selectedIndex = 0;
+    }, 800)
+});
 
 //back to top button
 jQuery(document).ready(function () {
