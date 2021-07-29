@@ -7,6 +7,13 @@ random when the name of the dog is selected.  Double tapping removes an image.
 __API:__
 https://dog.ceo/dog-api/
 
+## Problems
+- Made the images randomized
+- ound code that deletes picture if double tapped
+- found code that resets select menu
+- found code that gets pictures to be positioned at random
+- figured out how to make code reponsive
+
 **Dependencies:**
 - Javascript
 - fetch() API 
