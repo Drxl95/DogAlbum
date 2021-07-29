@@ -11,8 +11,7 @@ https://dog.ceo/dog-api/
 - Made the images randomized
 - ound code that deletes picture if double tapped
 - found code that resets select menu
-- found code that gets pictures to be positioned at random
-- figured out how to make code reponsive
+
 
 **Dependencies:**
 - Javascript

@@ -36,12 +36,12 @@ async function loadByBreed(breed) {
 
 //show randomized images
 function createImgs(images) {
-    let imageContainer = $(".slideshow");
+    let imageContainer = $(".photos");
     let dogImgs = $('<img>');
     dogImgs.attr("src", images[Math.floor(Math.random() * images.length)]);
     dogImgs.addClass("dogPic")
     imageContainer.append(dogImgs);
-    moveImg(dogImgs[0]);
+    // moveImg(dogImgs[0]);
 }
 
 //deletes pic if dbl tapped
@@ -60,34 +60,32 @@ $("#breeds").on("change", "select", function () {
     }, 800)
 });
 
-//Get a random number
-// let getRandomNum = (num) => {
-//     return Math.floor(Math.random() * Math.floor(num));
-// }
+let link = document.getElementById("back-to-top");
+var amountScrolled = 250;
 
-//get random number based off of screen width
-let getRandomNum = () => {
-    let x = window.matchMedia("(max-width: 450px)");
-    let y = window.matchMedia("(max-width: 650px)");
-    let z = window.matchMedia("(max-width: 850px)");
-    if (x.matches) {
-        return Math.floor(Math.random() * 250);
-    } else if (y.matches) {
-        return Math.floor(Math.random() * 300);
-    } else if (z.matches) {
-        return Math.floor(Math.random() * 450)
+window.addEventListener('scroll', function (e) {
+    if (this.window.pageYOffset > amountScrolled) {
+        link.classList.add('show');
     } else {
-        return Math.floor(Math.random() * 600)
+        link.className = 'back-to-top';
     }
-}
+});
 
-//show image in a random location
-let moveImg = (dogImgs) => {
-    let w = window.innerWidth;
-    let h = window.innerHeight;
-    dogImgs.style.top = getRandomNum(w) + "px";
-    dogImgs.style.left = getRandomNum(h * 2.5) + "px";
-};
+//scrolls to top
+link.addEventListener('click', function (e) {
+    e.preventDefault();
+
+    var distance = 0 - window.pageYOffset;
+    var increments = distance / (500 / 16);
+    function animateScroll() {
+        window.scrollBy(0, increments);
+        if (window.pageYOffset <= document.body.offsetTop) {
+            clearInterval(runAnimation);
+        }
+    };
+    // Loop the animation function
+    var runAnimation = setInterval(animateScroll, 16);
+});
 
 
 
