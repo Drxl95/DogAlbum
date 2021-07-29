@@ -29,7 +29,6 @@ select {
 }
 
 .photos {
-    /* Prevent vertical gaps */
     line-height: 0;
     
     -webkit-column-count: 5;
@@ -41,9 +40,8 @@ select {
   }
   
   .photos img {
-    /* Just in case there are inline attributes */
-    max-width: 100% !important;
-    height: auto !important;
+    max-width: 100%;
+    height: auto;
   }
 
 
@@ -107,6 +105,12 @@ select {
     }
   }
   @media (max-width: 800px) {
+    .header {
+        font-size: 1.25rem;
+    }
+    select {
+        font-size: 1.5rem;
+    }
     .photos {
     -moz-column-count:    2;
     -webkit-column-count: 2;
@@ -120,13 +124,3 @@ select {
     column-count:         1;
     }
   }
-
-@media screen and (max-width: 800px) {
-    .header {
-        font-size: 1.25rem;
-    }
-    select {
-        font-size: 1.5rem;
-    }
-  
-}
