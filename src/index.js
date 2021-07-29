@@ -41,6 +41,7 @@ function createImgs(images) {
     dogImgs.attr("src", images[Math.floor(Math.random() * images.length)]);
     dogImgs.addClass("dogPic")
     imageContainer.append(dogImgs);
+    moveImg(dogImgs[0]);
 }
 
 //deletes pic if dbl tapped
@@ -58,6 +59,37 @@ $("#breeds").on("change", "select", function () {
         select.selectedIndex = 0;
     }, 800)
 });
+
+//Get a random number
+// let getRandomNum = (num) => {
+//     return Math.floor(Math.random() * Math.floor(num));
+// }
+
+//get random number based off of screen width
+let getRandomNum = () => {
+    let x = window.matchMedia("(max-width: 450px)");
+    let y = window.matchMedia("(max-width: 650px)");
+    let z = window.matchMedia("(max-width: 850px)");
+    if (x.matches) {
+        return Math.floor(Math.random() * 250);
+    } else if (y.matches) {
+        return Math.floor(Math.random() * 300);
+    } else if (z.matches) {
+        return Math.floor(Math.random() * 450)
+    } else {
+        return Math.floor(Math.random() * 600)
+    }
+}
+
+//show image in a random location
+let moveImg = (dogImgs) => {
+    let w = window.innerWidth;
+    let h = window.innerHeight;
+    dogImgs.style.top = getRandomNum(w) + "px";
+    dogImgs.style.left = getRandomNum(h * 2.5) + "px";
+};
+
+
 
 
 
