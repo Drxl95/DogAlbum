@@ -63,6 +63,7 @@ $("#breeds").on("change", "select", function () {
 let link = document.getElementById("back-to-top");
 var amountScrolled = 250;
 
+//makes button show
 window.addEventListener('scroll', function (e) {
     if (this.window.pageYOffset > amountScrolled) {
         link.classList.add('show');
