@@ -25,5 +25,5 @@ I designed this with simplicity in mind and didn't want to add anything special 
 
 **Dependencies:**
 - Javascript
-- fetch() API 
+- fetch, Async Await
 - JQuery
