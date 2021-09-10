@@ -4,6 +4,8 @@ A Photo album of Dog Pictures
 A common dog API that I decided to turn into a photo album.  The user simply selects a breed of dog from the dropdown menu and a photo will appear.
 The images will appear in a random order to provide variety and they can be removed by double tapping.  
 
+<img width="700px" src="img/dog-gif.gif>
+
 __API:__
 https://dog.ceo/dog-api/
 
