@@ -12,7 +12,7 @@ https://dog.ceo/dog-api/
 ## __Challenges__
 
 - ### Randomized Images
-    - It is quite common for images to apear one by one, as the user selects an option from the dropdown menu.  I decided to do something a little different and create a photo album.  My reasoning behind was  so that users can see many different dogs at once.
+    - It is quite common for images to apear one by one, as the user selects an option from the dropdown menu.  I decided to do something a little different and create a photo album.  My reasoning for this was so that users can see many different dogs at once.
 
 - ### Remove Image
     - I wanted to include a way for ther user to remove an image since there would be more than one image present, giving the user more freedom. 
